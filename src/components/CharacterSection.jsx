@@ -10,8 +10,6 @@ function GetJsons(){
     const episodesUrl = "https://rickandmortyapi.com/api/episode";
     const locationsUrl = "https://rickandmortyapi.com/api/location";
     const charactersUrl = "https://rickandmortyapi.com/api/character";
-
-
 }
 
 export default function CharacterSection(){
