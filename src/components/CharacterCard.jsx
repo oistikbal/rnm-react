@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
-export default function CharacterCard({Name = "Name",}) {
+export default function CharacterCard({Name = "Name"}) {
   return (
     <Card style={{ width: '15rem' }}>
       <Card.Img variant="top" src="https://rickandmortyapi.com/api/character/avatar/690.jpeg" />
