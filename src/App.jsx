@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
-import CharacterGrid from "./components/CharacterGrid";
+import CharacterSection from "./components/CharacterSection";
 
 
 export default function App() {
   return (
-    <CharacterGrid></CharacterGrid>
+    <CharacterSection></CharacterSection>
   );
 }
