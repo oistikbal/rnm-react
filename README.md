@@ -1,9 +1,37 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # rnm-react
+
+[The Rick and Morty](https://rickandmortyapi.com/) clone with React.
+
+Check project at [rnm-react.onrender.com](https://rnm-react.onrender.com/)
+
+## Packages
+- Redux Toolkit
+- React Bootstrap
+
+## Install
+
+Clone the repo.
+```
+-with SSH
+git clone git@github.com:oistikbal/rnm-react.git
+
+-with HTTPS
+git clonehttps://github.com/oistikbal/rnm-react.git
+cd rnm-react
+```
+
+Install dependencies
+```
+npm install
+-or-
+yarn
+```
+
+Run the project
+```
+npm run dev
+```
+
+Go to localhost
+
+[localhost:5173](https://localhost:5173/)
