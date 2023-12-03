@@ -1,18 +1,19 @@
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
-export default function CharacterCard({Name = "Name"}) {
+export default function CharacterCard({name = "Name", status = "Dead", location = "Unknown", image ="https://rickandmortyapi.com/api/character/avatar/1.jpeg", species = "Unkown"
+}) {
   return (
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src="https://rickandmortyapi.com/api/character/avatar/690.jpeg" />
+    <Card style={{ width: '12rem' }}>
+      <Card.Img variant="top" src={image}/>
       <Card.Body>
-        <Card.Title>{Name}</Card.Title>
+        <Card.Title>{name}</Card.Title>
         <Card.Text>
+            <div>{status} - {species}</div>
         <div>
-            <p>Location</p>
+            <p>{location}</p>
         </div>
-        <div>
-            <p>First</p>
-        </div>
+        <Button variant="primary">Favorite</Button>{' '}
         </Card.Text>
       </Card.Body>
     </Card>

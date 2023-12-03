@@ -4,15 +4,16 @@ import Col from 'react-bootstrap/Col';
 import CharacterGrid from "./CharacterGrid";
 import CharacterPagination from './CharacterPagination';
 import CharacterSearch from './CharacterSearch';
+import { useSelector, useDispatch } from 'react-redux'
 
-
-function GetJsons(){
-    const episodesUrl = "https://rickandmortyapi.com/api/episode";
-    const locationsUrl = "https://rickandmortyapi.com/api/location";
-    const charactersUrl = "https://rickandmortyapi.com/api/character";
-}
 
 export default function CharacterSection(){
+
+    const completed = useSelector(state => state.rnm.completed)
+    
+    if(!completed)
+        return null
+
     return (
         <Container>
                 <Row>
