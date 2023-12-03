@@ -1,10 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
 export default function CharacterCard({name = "Name", status = "Dead", location = "Unknown", image ="https://rickandmortyapi.com/api/character/avatar/1.jpeg", species = "Unkown"
-}) {
+, favorite = false}) {
   return (
-    <Card style={{ width: '12rem' }}>
+    <Card className={favorite ? ("bg-danger.bg-gradient text-white") : ("bg-dark bg-gradient text-white")} style={{ width: '12rem' }}>
       <Card.Img variant="top" src={image}/>
       <Card.Body>
         <Card.Title>{name}</Card.Title>

@@ -15,7 +15,7 @@ export default function CharacterPagination(){
         <Pagination className="align-middle">
           <Pagination.Prev onClick={() => dispatch(setPage(clamp(pageValue - 1, 1, Infinity)))}/>
           <Pagination.Item active>{pageValue}</Pagination.Item>
-          <Pagination.Next onClick={() => dispatch(setPage(clamp(pageValue + 1, 1, Infinity)))}/>
+          <Pagination.Next onClick={() => dispatch(setPage(clamp(pageValue + 1, 1, 15)))}/>
         </Pagination>
     );
 }

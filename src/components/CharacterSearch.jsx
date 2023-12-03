@@ -7,7 +7,7 @@ export default function CharacterSearch()
     return (      
         <FloatingLabel
             controlId="floatingInput"
-            label="Search Character"
+            label="Search Character, Episode or Location"
             className="mb-3"
         >
             <Form.Control type="email" placeholder="name@example.com" />

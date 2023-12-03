@@ -5,14 +5,20 @@ import CharacterGrid from "./CharacterGrid";
 import CharacterPagination from './CharacterPagination';
 import CharacterSearch from './CharacterSearch';
 import { useSelector, useDispatch } from 'react-redux'
+import Spinner from 'react-bootstrap/Spinner';
 
 
 export default function CharacterSection(){
 
     const completed = useSelector(state => state.rnm.completed)
     
-    if(!completed)
-        return null
+    if(!completed){
+        return (
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          );
+    }
 
     return (
         <Container>
